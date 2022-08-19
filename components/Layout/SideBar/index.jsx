@@ -3,11 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import linkedinSVG from "/public/svg/linkedin-brands.svg";
 import githubSVG from "/public/svg/square-github-brands.svg";
+import KSlogo from "/public/images/KSlogo.png";
 
 const SideBar = () => {
   return (
     <div className="sidebarContainer">
-      <p className="logo">KS</p>
+      <Image src={KSlogo} width={53} height={88} alt="Logo KS" layout="fixed" />
       <ul className="listContainer">
         <Link href="/">
           <li>

@@ -50,7 +50,7 @@
     margin-bottom: 1em;
 }
 
-.projectCardSingleRightSide p {
+.projectCardSingleDescription {
     font-size: 15px;
     flex-grow: 2;
 }

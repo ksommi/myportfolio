@@ -17,19 +17,18 @@ const About = () => {
             <br />
             <br />
             En el año 2018 realicé un curso de Maquetado Web en Educacion IT 💻.
-            Después de un tiempo, a mediados del 2021 tengo la oportunidad de
-            retomar mis estudios de manera autodidacta realizando varios cursos
-            y practicas de manera totalmente independiente enfocandome en
-            Desarrollo Front-End.
+            Después de un tiempo, a mediados del 2021 tuve la oportunidad de
+            retomar mis estudios de manera autodidacta y también realizando
+            varios cursos y practicas de forma totalmente independiente
+            enfocandome en Desarrollo Front-End.
             <br />
             <br />
-            Ampliando aún mis conocimientos en{" "}
-            <Image src={javascriptSVG} width={20} height={20} />
-            JavaScript y <Image src={reactSVG} width={20} height={20} /> React
-            me encuentro en busqueda de mi primera experiencia laboral en el
-            mundo de la programación y el desarrollo web. Sin mucho más que
-            agregar, gracias por leerme y tomarte el tiempo de revisar mi
-            Portfolio!
+            Ampliando aún mis conocimientos en JavaScript{" "}
+            <Image src={javascriptSVG} width={18} height={18} /> y React
+            <Image src={reactSVG} width={18} height={18} /> me encuentro en
+            busqueda de mi primera experiencia laboral en el mundo de la
+            programación y el desarrollo web. Sin mucho más que agregar, gracias
+            por leerme y tomarte el tiempo de revisar mi Portfolio!
           </p>
         </div>
       </div>

@@ -13,9 +13,8 @@ const Skills = () => {
     <div className="skillsContainer">
       <h2>Habilidades</h2>
       <p>
-        Las habilidades y/o herramientas en cuestión, que sigo perfeccionando al
-        día de hoy, fueron adquiridas realizando cursos y practicas de manera
-        autodidacta.
+        Estas herramientas que a día de hoy sigo estudiando y perfeccionando,
+        fueron adquiridas tanto en cursos como en prácticas autodidactas.
       </p>
       <div className="skillCardContainer">
         <SkillCard title="HTML" img={htmlSVG} />
