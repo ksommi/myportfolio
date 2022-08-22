@@ -1,5 +1,5 @@
 .aboutContainer {
-    margin: 40px auto;
+    margin: 60px auto;
     max-width: 800px;
 }
 
@@ -12,11 +12,40 @@
     flex-direction: row;
     width: 100%;
     margin-top: 20px;
+    transition: 0.2s;
+}
+
+.aboutMeImage {
+    width: 50%;
 }
 
 .aboutMeText {
-    font-size: 17px;
-    padding-left: 10px;
-    width: 100%;
-    max-width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+}
+
+.aboutMe:hover {
+    background-color: var(--color2);
+    border-radius: 6px;
+}
+
+/* Theme mode */
+
+[data-theme="light"] .aboutMe:hover {
+    background-color: var(--white);
+}
+
+@media (max-width:768px) {
+    .aboutContainer{
+        width: 80%;
+    }
+
+    .aboutMe{
+        flex-direction: column;
+    }
+
+    .aboutMeImage, .aboutMeText{
+        width: 100%;
+    }
 }

@@ -40,3 +40,9 @@
         transform: rotate(45deg) translate(20px,20px);
     }
 }
+
+@media (max-width:768px){
+    .arrow{
+        display: none;
+    }
+}

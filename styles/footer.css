@@ -25,3 +25,16 @@ footer h3 {
 footer p {
     margin-bottom: 15px;
 }
+
+/* Theme mode */
+
+[data-theme="light"] footer span {
+    background-color: rgb(0,0,0, 0.2 );
+}
+
+@media (max-width:768px) {
+    footer {
+        width: 100%;
+        position: inherit;
+    }
+}

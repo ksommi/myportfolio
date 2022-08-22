@@ -21,3 +21,10 @@
 .skills{
   min-height: 100vh;
 }
+
+@media (max-width:768px) {
+  .main{
+    width: 100%;
+    position: unset;
+  }
+}

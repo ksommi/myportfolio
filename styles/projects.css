@@ -140,3 +140,63 @@
     height: 100%;
     padding: 15px;
 }
+
+/* Theme mode */
+
+[data-theme="light"] .projectCardSingleContainer.full:hover {
+    background-color: var(--white);
+}
+
+[data-theme="light"] .square .projectCardSingleRightSide{
+background-color: rgb(220,220,220,0.8);
+}
+
+@media (max-width:786px) {
+    .projectsContainer{
+        width: 100%;
+    }
+
+    .projectCardSingleContainer.full{
+        flex-direction: column;
+        max-width: 100vw;
+        width: 80%;
+        height: 100%;
+    }
+
+    .full .projectCardSingleLeftSide{
+        width: 100%;
+    }
+
+    .full .projectCardSingleRightSide{
+        width: 100%;
+    }
+
+    .full .projectCardSingleBtnContainer{
+        margin-top: 20px;
+    }
+
+    .projectsCardsContainer{
+        width: 100%;
+        max-width: 100vw;
+        align-items: center;
+    }
+
+    .projectCardsSquares{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .projectCardSingleContainer.square{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width:480px){
+    .projectCardsSquares{
+        width: 80%;
+    }
+    .projectCardSingleContainer.square {
+        width: 100%;
+        height: 70vh;
+    }
+}

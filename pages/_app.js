@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import { ThemeProvider } from "next-themes";
 import "../styles/globals.css";
 import "../styles/sidebar.css";
 import "../styles/about.css";
@@ -10,9 +11,11 @@ import "../styles/footer.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 }
 

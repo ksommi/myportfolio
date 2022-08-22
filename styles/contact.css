@@ -1,6 +1,6 @@
 .contactContainer{
     max-width: 800px;
-    margin:20px auto;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
 }
@@ -18,23 +18,25 @@
     width: 400px;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 }
 
 .formContainer input {
     border: none;
     height: 35px;
-    padding: 2px;
+    padding-left: 4px;
     margin: 10px 0;
-    background-color: var(--color2) !important;
+    background-color: var(--color2);
     color: var(--text);
-    position: relative
+    position: relative;
+    border-radius: 2px;
 }
 
 .formContainer span{
     content: "";
     display: block;
     background-color: aliceblue;
-    width: 400px;
+    width: 100%;
     height: 2px;
     position: relative;
     bottom: 12px;
@@ -48,13 +50,14 @@
 
 .formContainer textarea {
     resize: none;
-    width: 400px;
+    width: 100%;
     height: 150px;
     border: none;
-    padding: 2px;
+    padding: 5px;
     margin: 10px 0;
     background-color: var(--color2);
     color: var(--text);
+    border-radius: 2px;
 }
 
 .formContainer input:focus, .formContainer textarea:focus {
@@ -68,9 +71,37 @@
     align-self: flex-end;
     background-color: var(--color4);
     border: none;
-    color: var(--text);
+    color: var(--white);
+    border-radius: 6px;
 }
 
-.formContainer {
-    margin-right: 20px;
+.formContainer button:hover {
+    background-color: brown;
+}   
+
+/* Theme mode */
+
+[data-theme="light"] .formContainer input,
+[data-theme="light"] .formContainer textarea {
+    background-color: var(--white);
+}
+
+[data-theme="light"] .formContainer span {
+    background-color: var(--color5);
+}
+
+@media (max-width:768px) {
+    .contactContainer{
+        width: 80%;
+    }
+
+    .contactSubContainer{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .formContainer{
+        width: 100%;
+        margin: 10px 0;
+    }
 }

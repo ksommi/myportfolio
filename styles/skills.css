@@ -69,12 +69,12 @@
 
 .cardSingleContainer span, .cardSingleContainer h3 {
     transition: 0.4s;
-    filter: grayscale(100%);
+    filter: grayscale(100%) opacity(80%);
 }
 
 .cardSingleContainer:hover span {
     transform: scale(1.4) perspective(200px) rotateY(40deg);   
-    filter: grayscale(0%);
+    filter: grayscale(0%) opacity(100%);
 }
 
 .cardSingleContainer:hover h3 {
@@ -91,4 +91,37 @@
 
 .cardSingleTitle{
     margin-top: 25px;
+}
+
+/* Theme mode */
+
+[data-theme="light"] .cardSingleContainer.invert span {
+    filter: invert() opacity(50%);
+}
+
+[data-theme="light"] .cardSingleContainer.invert:hover span {
+    filter: invert() opacity(100%);
+}
+
+[data-theme="light"] .cardSingleContainer:hover:after,
+[data-theme="light"] .cardSingleContainer:hover:before {
+    background: rgba(0,0,0,0.4);
+}
+
+@media (max-width:768px) {
+
+    .skillsContainer p {
+        width: 87%;
+    }
+
+    .skillCardContainer{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }   
+}
+
+@media (max-width:480px){
+    .skillCardContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

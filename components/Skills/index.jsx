@@ -13,17 +13,17 @@ const Skills = () => {
     <div className="skillsContainer">
       <h2>Habilidades</h2>
       <p>
-        Estas herramientas que a día de hoy sigo estudiando y perfeccionando,
-        fueron adquiridas tanto en cursos como en prácticas autodidactas.
+        Estas son las herramientas que manejo y que día a día sigo
+        perfeccionando.
       </p>
       <div className="skillCardContainer">
         <SkillCard title="HTML" img={htmlSVG} />
         <SkillCard title="CSS" img={cssSVG} />
         <SkillCard title="JavaScript" img={javascriptSVG} />
         <SkillCard title="React" img={reactSVG} />
-        <SkillCard title="Github" img={githubSVG} />
+        <SkillCard title="Github" img={githubSVG} invertColor="invert" />
         <SkillCard title="Firebase" img={firebaseSVG} />
-        <SkillCard title="NextJs" img={nextSVG} />
+        <SkillCard title="NextJs" img={nextSVG} invertColor="invert" />
         <SkillCard title="Photoshop" img={photoshopSVG} />
       </div>
     </div>
