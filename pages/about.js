@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <div>
       <Head>
-        <title>Kevin Sommi</title>
+        <title>Acerca de mi</title>
       </Head>
       <main className={styles.main}>
         <About />

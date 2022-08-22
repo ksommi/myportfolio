@@ -6,7 +6,7 @@ export default function SkillsPage() {
   return (
     <div>
       <Head>
-        <title>Kevin Sommi</title>
+        <title>Habilidades</title>
       </Head>
       <main className={styles.main}>
         <Skills />

@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <div>
       <Head>
-        <title>Kevin Sommi</title>
+        <title>Proyectos</title>
       </Head>
       <main className={styles.main}>
         <Projects />

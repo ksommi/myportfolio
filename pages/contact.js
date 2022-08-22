@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div>
       <Head>
-        <title>Kevin Sommi</title>
+        <title>Contacto</title>
       </Head>
       <main className={styles.main}>
         <Contact />
