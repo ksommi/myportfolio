@@ -27,7 +27,7 @@ const ThemeChanger = () => {
       <label className="switch">
         <input
           type="checkbox"
-          onClick={handleChanger}
+          onChange={handleChanger}
           checked={theme === "light" ? "checked" : ""}
         />
         <span className="slider"></span>

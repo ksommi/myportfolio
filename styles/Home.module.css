@@ -12,17 +12,17 @@
   width: calc(100% - 170px);
   display: flex;
   flex-direction: column;
-  position: relative; 
+  position: relative;
   top: 0;
   left: 170px;
 }
 
-.skills{
+.skills {
   min-height: 100vh;
 }
 
-@media (max-width:768px) {
-  .main{
+@media (max-width: 768px) {
+  .main {
     width: 100%;
     position: unset;
   }

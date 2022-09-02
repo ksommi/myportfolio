@@ -1,51 +1,59 @@
 .aboutContainer {
-    margin: 60px auto;
-    max-width: 800px;
+  margin: 60px auto;
+  max-width: 800px;
 }
 
 .aboutContainer h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .aboutMe {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 20px;
-    transition: 0.2s;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+  transition: 0.2s;
 }
 
 .aboutMeImage {
-    width: 50%;
+  width: 50%;
 }
 
 .aboutMeText {
-    font-size: 18px;
-    padding: 10px;
-    width: 50%;
+  font-size: 18px;
+  padding: 10px;
+  width: 50%;
 }
 
 .aboutMe:hover {
-    background-color: var(--color2);
-    border-radius: 6px;
+  background-color: var(--color2);
+  border-radius: 6px;
 }
 
 /* Theme mode */
 
 [data-theme="light"] .aboutMe:hover {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
-@media (max-width:768px) {
-    .aboutContainer{
-        width: 80%;
-    }
+@media (max-width: 1000px) {
+  .aboutMe {
+    width: 95%;
+    margin: auto;
+  }
+}
 
-    .aboutMe{
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .aboutContainer {
+    width: 80%;
+  }
 
-    .aboutMeImage, .aboutMeText{
-        width: 100%;
-    }
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .aboutMeImage,
+  .aboutMeText {
+    width: 100%;
+  }
 }

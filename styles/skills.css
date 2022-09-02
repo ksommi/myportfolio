@@ -1,127 +1,136 @@
 /* Skills component */
 .skillsContainer {
-    margin: 60px auto;
-    max-width: 900px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin: 60px auto;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.skillsContainer p{
-    max-width: 780px;
-    margin: 20px 0;
-    font-size: 19px;
+.skillsContainer p {
+  max-width: 780px;
+  margin: 20px 0;
+  font-size: 19px;
 }
 
-.skillCardContainer{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 33px;
-    grid-auto-rows: auto;
-    height: auto;
+.skillCardContainer {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 33px;
+  grid-auto-rows: auto;
+  height: auto;
 }
-
 
 /* Cards component */
-.cardSingleContainer{
-    position: relative;
-    width: 160px;
-    height: 160px;
-    background-color: var(--background);
-    margin: 10px;
-    padding: 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all ease 0.1s;
-    overflow: hidden;
-
+.cardSingleContainer {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: var(--background);
+  margin: 10px;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all ease 0.1s;
+  overflow: hidden;
 }
 
 .cardSingleContainer:after,
-.cardSingleContainer:before{
-    width: 30px;
-    height: 288px;
-	content: '';
-	display: block;
-	background: rgba(255,255,255,0.0);
-    opacity: 0.2;
-	transform: rotate(45deg);
-	top: -60px;
-	position: absolute;
-	transition: none;
-	right:-45%;
+.cardSingleContainer:before {
+  width: 30px;
+  height: 288px;
+  content: "";
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  opacity: 0.2;
+  transform: rotate(45deg);
+  top: -60px;
+  position: absolute;
+  transition: none;
+  right: -45%;
 }
 
-.cardSingleContainer:before{
-	left: -48%;
+.cardSingleContainer:before {
+  left: -48%;
 }
 
 .cardSingleContainer:hover:after,
-.cardSingleContainer:hover:before{
-	transform: rotate(45deg), scaleX(130%);
-	background: rgba(255,255,255,0.2);
-	transition: all ease-in 0.2s;
+.cardSingleContainer:hover:before {
+  transform: rotate(45deg), scaleX(130%);
+  background: rgba(255, 255, 255, 0.2);
+  transition: all ease-in 0.2s;
 }
 
-.cardSingleContainer span, .cardSingleContainer h3 {
-    transition: 0.4s;
-    filter: grayscale(100%) opacity(80%);
+.cardSingleContainer span,
+.cardSingleContainer h3 {
+  transition: 0.4s;
+  filter: grayscale(100%) opacity(80%);
 }
 
 .cardSingleContainer:hover span {
-    transform: scale(1.4) perspective(200px) rotateY(40deg);   
-    filter: grayscale(0%) opacity(100%);
+  transform: scale(1.4) perspective(200px) rotateY(40deg);
+  filter: grayscale(0%) opacity(100%);
 }
 
 .cardSingleContainer:hover h3 {
-    transform: translateY(15px);
+  transform: translateY(15px);
 }
 
-.cardSingleContainer:hover:after{
-	right: 130%;
-}
- 
-.cardSingleContainer:hover:before{
-	left: 130%;
+.cardSingleContainer:hover:after {
+  right: 130%;
 }
 
-.cardSingleTitle{
-    margin-top: 25px;
+.cardSingleContainer:hover:before {
+  left: 130%;
+}
+
+.cardSingleTitle {
+  margin-top: 25px;
 }
 
 /* Theme mode */
 
 [data-theme="light"] .cardSingleContainer.invert span {
-    filter: invert() opacity(50%);
+  filter: invert() opacity(50%);
 }
 
 [data-theme="light"] .cardSingleContainer.invert:hover span {
-    filter: invert() opacity(100%);
+  filter: invert() opacity(100%);
 }
 
 [data-theme="light"] .cardSingleContainer:hover:after,
 [data-theme="light"] .cardSingleContainer:hover:before {
-    background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width:768px) {
+@media (max-width: 1000px) {
+  .skillCardContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 
-    .skillsContainer p {
-        width: 87%;
-    }
-
-    .skillCardContainer{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }   
+  .skillsContainer p {
+    margin: 20px;
+  }
 }
 
-@media (max-width:480px){
-    .skillCardContainer{
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 768px) {
+  .skillsContainer p {
+    width: 87%;
+  }
+
+  .skillCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillCardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
