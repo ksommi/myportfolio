@@ -8,7 +8,7 @@ const Projects = () => {
     <div className="projectsContainer">
       <h2 className="projectsTitle">Proyectos</h2>
       <p className="projectsDescription">
-        Estos son los trabajos que tengo <i>finalizados</i> hasta el momento.
+        Estos son los proyectos personales que tengo <i>finalizados</i> hasta el momento.
       </p>
       <div className="projectsCardsContainer">
         <ProjectCard

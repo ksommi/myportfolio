@@ -54,7 +54,7 @@ const Home = () => {
           <br />
           Mi nombre es Kevin,
           <br />
-          Soy Web Developer.
+          Soy Desarrollador FullStack.
         </h1>
       </div>
       <div className="arrow">
@@ -64,6 +64,6 @@ const Home = () => {
       </div>
     </div>
   );
-};
+};  
 
 export default Home;
