@@ -9,7 +9,7 @@ const SkillCard = ({ title, img, invertColor }) => {
 				height={60}
 				className="cardSingleImage"
 				alt="Icono sobre la habilidad en cuestion"
-				objectFit="contain"
+				style={{ objectFit: "contain" }}
 			/>
 			<h3 className="cardSingleTitle">{title}</h3>
 		</div>

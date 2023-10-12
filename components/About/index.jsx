@@ -16,16 +16,14 @@ const About = () => {
 		<div className="aboutContainer">
 			<h2>Acerca de mi</h2>
 			<div className="aboutMe">
-				<div className="aboutMeImage">
-					<Image
-						src={meJPG}
-						width={400}
-						height={480}
-						objectFit="cover"
-						layout="responsive"
-						alt="Foto de perfil"
-					/>
-				</div>
+				<Image
+					src={meJPG}
+					width={400}
+					height={480}
+					style={{ objectFit: "cover" }}
+					alt="Foto de perfil"
+					className="aboutMeImage"
+				/>
 				<div className="aboutMeText">
 					<p>
 						Mi nombre completo es Kevin Hernan Sommi, tengo {edad} años y
